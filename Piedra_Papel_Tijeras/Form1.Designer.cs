@@ -52,6 +52,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(380, 325);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.MaximumSize = new System.Drawing.Size(200, 200);
             this.button1.MinimumSize = new System.Drawing.Size(200, 200);
             this.button1.Name = "button1";
