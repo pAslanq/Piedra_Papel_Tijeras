@@ -10,33 +10,27 @@ using System.Windows.Forms;
 
 namespace Piedra_Papel_Tijeras
 {
-    public partial class Form1 : Form
+    public partial class FormGame : Form
     {
-        public Form1()
+        public FormGame()
         {
             InitializeComponent();
+            this.SetVisibleCore(false);
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void FormGame_Load(object sender, EventArgs e)
         {
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormGame NuevoJuego = new FormGame();
+           
+            Form1 form1 = new Form1();
             this.Visible = false;
-            NuevoJuego.Visible = true;
+            form1.Visible = true;
+
         }
     }
 }
