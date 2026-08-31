@@ -35,16 +35,19 @@
             // 
             // button1
             // 
-            this.button1.AutoSize = true;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Location = new System.Drawing.Point(396, 269);
+            this.button1.MaximumSize = new System.Drawing.Size(200, 200);
+            this.button1.MinimumSize = new System.Drawing.Size(200, 200);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 139);
+            this.button1.Size = new System.Drawing.Size(200, 200);
             this.button1.TabIndex = 0;
             this.button1.Text = "JUGAR";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.AutoSize = true;
             this.button2.Location = new System.Drawing.Point(860, 573);
             this.button2.Name = "button2";
@@ -55,12 +58,13 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Minecraftia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Minecraftia", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(116, 97);
+            this.label1.Location = new System.Drawing.Point(121, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(711, 84);
+            this.label1.Size = new System.Drawing.Size(770, 91);
             this.label1.TabIndex = 2;
             this.label1.Text = "Piedra Papel y Tijeras";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
