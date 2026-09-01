@@ -73,9 +73,59 @@ namespace Piedra_Papel_Tijeras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_icon_icons_com_70975 {
+            get {
+                object obj = ResourceManager.GetObject("exit_icon-icons.com_70975", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ajustes_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ajustes-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_chicle__48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-chicle--48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_salida_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salida-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagen1 {
             get {
                 object obj = ResourceManager.GetObject("Imagen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap knowledge_18514026__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("knowledge_18514026 (3)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
