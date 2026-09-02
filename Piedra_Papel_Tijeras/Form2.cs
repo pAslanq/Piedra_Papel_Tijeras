@@ -32,5 +32,10 @@ namespace Piedra_Papel_Tijeras
             form1.Visible = true;
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

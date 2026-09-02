@@ -31,100 +31,84 @@
             this.components = new System.ComponentModel.Container();
             this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Sidebar_Timer = new System.Windows.Forms.Timer(this.components);
             this.MenuButton = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.Sidebar_Timer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Sidebar
             // 
-            this.Sidebar.BackColor = System.Drawing.Color.SlateGray;
+            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Sidebar.Controls.Add(this.panel1);
             this.Sidebar.Controls.Add(this.panel3);
             this.Sidebar.Controls.Add(this.panel4);
             this.Sidebar.Controls.Add(this.panel5);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.Sidebar.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.Sidebar.Location = new System.Drawing.Point(683, 0);
-            this.Sidebar.MaximumSize = new System.Drawing.Size(247, 0);
-            this.Sidebar.MinimumSize = new System.Drawing.Size(70, 0);
+            this.Sidebar.Location = new System.Drawing.Point(1025, 0);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Sidebar.MaximumSize = new System.Drawing.Size(370, 0);
+            this.Sidebar.MinimumSize = new System.Drawing.Size(105, 0);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(247, 641);
+            this.Sidebar.Size = new System.Drawing.Size(370, 986);
             this.Sidebar.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.MenuButton);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 562);
+            this.panel1.Location = new System.Drawing.Point(4, 864);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 76);
+            this.panel1.Size = new System.Drawing.Size(366, 117);
             this.panel1.TabIndex = 2;
             // 
-            // panel3
+            // MenuButton
             // 
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(3, 456);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(265, 100);
-            this.panel3.TabIndex = 5;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Location = new System.Drawing.Point(3, 363);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(265, 87);
-            this.panel4.TabIndex = 5;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.button5);
-            this.panel5.Location = new System.Drawing.Point(3, 257);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(244, 100);
-            this.panel5.TabIndex = 5;
+            this.MenuButton.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_ajustes_48;
+            this.MenuButton.Location = new System.Drawing.Point(26, 22);
+            this.MenuButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MenuButton.Name = "MenuButton";
+            this.MenuButton.Size = new System.Drawing.Size(84, 82);
+            this.MenuButton.TabIndex = 1;
+            this.MenuButton.TabStop = false;
+            this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(138, 29);
+            this.label1.Location = new System.Drawing.Point(207, 45);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 15);
+            this.label1.Size = new System.Drawing.Size(110, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "AJUSTES";
             // 
-            // Sidebar_Timer
+            // panel3
             // 
-            this.Sidebar_Timer.Interval = 10;
-            this.Sidebar_Timer.Tick += new System.EventHandler(this.Sidebar_Timer_Tick);
-            // 
-            // MenuButton
-            // 
-            this.MenuButton.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_ajustes_48;
-            this.MenuButton.Location = new System.Drawing.Point(17, 14);
-            this.MenuButton.Name = "MenuButton";
-            this.MenuButton.Size = new System.Drawing.Size(56, 53);
-            this.MenuButton.TabIndex = 1;
-            this.MenuButton.TabStop = false;
-            this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Location = new System.Drawing.Point(4, 700);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(398, 154);
+            this.panel3.TabIndex = 5;
             // 
             // button3
             // 
@@ -135,14 +119,24 @@
             this.button3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.button3.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_chicle__48;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(7, 11);
+            this.button3.Location = new System.Drawing.Point(10, 17);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 58);
+            this.button3.Size = new System.Drawing.Size(338, 89);
             this.button3.TabIndex = 1;
             this.button3.Text = "ENTRENAR";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Location = new System.Drawing.Point(4, 556);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(398, 134);
+            this.panel4.TabIndex = 5;
             // 
             // button4
             // 
@@ -153,14 +147,24 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button4.Image = global::Piedra_Papel_Tijeras.Properties.Resources.knowledge_18514026__3_1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(7, 3);
+            this.button4.Location = new System.Drawing.Point(-28, 5);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 70);
+            this.button4.Size = new System.Drawing.Size(376, 108);
             this.button4.TabIndex = 1;
             this.button4.Text = "MOSTRAR APRENDIZAJE";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Location = new System.Drawing.Point(4, 392);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(366, 154);
+            this.panel5.TabIndex = 5;
             // 
             // button5
             // 
@@ -171,22 +175,29 @@
             this.button5.ForeColor = System.Drawing.Color.Red;
             this.button5.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_salida_50;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(7, 20);
+            this.button5.Location = new System.Drawing.Point(10, 31);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(225, 58);
+            this.button5.Size = new System.Drawing.Size(338, 89);
             this.button5.TabIndex = 1;
             this.button5.Text = "SALIR";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // Sidebar_Timer
+            // 
+            this.Sidebar_Timer.Interval = 10;
+            this.Sidebar_Timer.Tick += new System.EventHandler(this.Sidebar_Timer_Tick);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::Piedra_Papel_Tijeras.Properties.Resources.TituloPiedraPapelTijeras;
-            this.pictureBox1.Location = new System.Drawing.Point(210, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(315, 55);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(536, 283);
+            this.pictureBox1.Size = new System.Drawing.Size(804, 435);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -200,24 +211,24 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(380, 325);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.MaximumSize = new System.Drawing.Size(200, 200);
-            this.button1.MinimumSize = new System.Drawing.Size(200, 200);
+            this.button1.Location = new System.Drawing.Point(570, 500);
+            this.button1.MaximumSize = new System.Drawing.Size(300, 308);
+            this.button1.MinimumSize = new System.Drawing.Size(300, 308);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 200);
+            this.button1.Size = new System.Drawing.Size(300, 308);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 641);
+            this.ClientSize = new System.Drawing.Size(1395, 986);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menú Principal";
@@ -226,13 +237,13 @@
             this.Sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
