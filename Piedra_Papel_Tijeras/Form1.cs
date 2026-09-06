@@ -36,8 +36,8 @@ namespace Piedra_Papel_Tijeras
         private void button1_Click(object sender, EventArgs e)
         {
             FormGame NuevoJuego = new FormGame();
-            this.Visible = false;
             NuevoJuego.Visible = true;
+            this.Visible = false;
         }
 
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
@@ -70,17 +70,17 @@ namespace Piedra_Papel_Tijeras
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Close(); // Cierra la aplicación
+            Application.Exit();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            // Redirecciona a el form de los datos del aprendizaje (En proceso)
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Redirecciona a el form de entrenamiento (En proceso)
+            
         }
     }
 }

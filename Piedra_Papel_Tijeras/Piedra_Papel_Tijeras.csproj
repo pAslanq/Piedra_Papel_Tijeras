@@ -152,5 +152,20 @@
   <ItemGroup>
     <None Include="Resources\ManoPiedra.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPiedraRotada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPapelRotada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoTijeraRotada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoTijera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPapel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

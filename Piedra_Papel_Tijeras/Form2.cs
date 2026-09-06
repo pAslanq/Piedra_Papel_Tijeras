@@ -16,7 +16,9 @@ namespace Piedra_Papel_Tijeras
         {
             InitializeComponent();
             this.SetVisibleCore(false);
+            this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
+
         }
 
         private void FormGame_Load(object sender, EventArgs e)
@@ -44,6 +46,11 @@ namespace Piedra_Papel_Tijeras
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
