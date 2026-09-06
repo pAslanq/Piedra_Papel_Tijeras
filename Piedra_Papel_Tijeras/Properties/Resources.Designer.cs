@@ -63,6 +63,16 @@ namespace Piedra_Papel_Tijeras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _37a4cd36cf0cd53d465cb5fbba873919 {
+            get {
+                object obj = ResourceManager.GetObject("37a4cd36cf0cd53d465cb5fbba873919", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b1323cbb_6436_4c78_b16b_21fb4ddf2b9c {
             get {
                 object obj = ResourceManager.GetObject("b1323cbb-6436-4c78-b16b-21fb4ddf2b9c", resourceCulture);
@@ -76,6 +86,46 @@ namespace Piedra_Papel_Tijeras.Properties {
         internal static System.Drawing.Bitmap exit_icon_icons_com_70975 {
             get {
                 object obj = ResourceManager.GetObject("exit_icon-icons.com_70975", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_9g1mo99g1mo99g1m_Photoroom {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_dmf1o2dmf1o2dmf1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_dmf1o2dmf1o2dmf1-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_gf4v0ugf4v0ugf4v {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_gf4v0ugf4v0ugf4v", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_hd0a5shd0a5shd0a {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_hd0a5shd0a5shd0a", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +183,49 @@ namespace Piedra_Papel_Tijeras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ManoPiedra {
+            get {
+                object obj = ResourceManager.GetObject("ManoPiedra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Papel {
+            get {
+                object obj = ResourceManager.GetObject("Papel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Piedra {
+            get {
+                object obj = ResourceManager.GetObject("Piedra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Play {
             get {
                 object obj = ResourceManager.GetObject("Play", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tijera {
+            get {
+                object obj = ResourceManager.GetObject("Tijera", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
