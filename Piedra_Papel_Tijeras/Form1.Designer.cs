@@ -60,7 +60,7 @@
             this.Sidebar.Controls.Add(this.panel5);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.Sidebar.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.Sidebar.Location = new System.Drawing.Point(3117, 0);
+            this.Sidebar.Location = new System.Drawing.Point(2317, 0);
             this.Sidebar.MaximumSize = new System.Drawing.Size(247, 0);
             this.Sidebar.MinimumSize = new System.Drawing.Size(70, 0);
             this.Sidebar.Name = "Sidebar";
@@ -184,7 +184,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::Piedra_Papel_Tijeras.Properties.Resources.TituloPiedraPapelTijeras;
-            this.pictureBox1.Location = new System.Drawing.Point(1427, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(1027, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(536, 283);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,8 +200,8 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1597, 605);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(1197, 605);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.MaximumSize = new System.Drawing.Size(200, 200);
             this.button1.MinimumSize = new System.Drawing.Size(200, 200);
             this.button1.Name = "button1";
@@ -214,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3364, 1201);
+            this.ClientSize = new System.Drawing.Size(2564, 1201);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
