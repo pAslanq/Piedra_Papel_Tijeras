@@ -94,8 +94,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -106,6 +106,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -114,6 +119,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TituloPiedraPapelTijeras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1323cbb-6436-4c78-b16b-21fb4ddf2b9c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salida-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knowledge_18514026 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chicle--48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajustes-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atrass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tijera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tijera1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_dmf1o2dmf1o2dmf1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_gf4v0ugf4v0ugf4v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_hd0a5shd0a5shd0a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37a4cd36cf0cd53d465cb5fbba873919.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPiedra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPiedraRotada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPapelRotada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoTijeraRotada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoTijera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManoPapel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
