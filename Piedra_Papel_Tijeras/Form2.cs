@@ -54,5 +54,13 @@ namespace Piedra_Papel_Tijeras
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void JugarRonda(int jugadaActualUsuario)
+        {
+        }
     }
 }
