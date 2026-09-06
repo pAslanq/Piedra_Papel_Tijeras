@@ -27,7 +27,7 @@ namespace Piedra_Papel_Tijeras
                 case 2:
                     recPiedra = matriz.Papel_Piedra;
                     recPapel = matriz.Papel_Papel;
-                    recTijera = matriz.Papel_Tijera
+                    recTijera = matriz.Papel_Tijera;
                 break;
 
                 case 3:
