@@ -44,16 +44,19 @@ namespace Piedra_Papel_Tijeras
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             JugarRondaAsync(1);
+            pictureBox6.Image = Properties.Resources.ManoPiedra;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             JugarRondaAsync(2);
+            pictureBox6.Image = Properties.Resources.ManoPapel;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             JugarRondaAsync(3);
+            pictureBox6.Image = Properties.Resources.ManoTijera;
         }
         private async Task JugarRondaAsync(int jugadaActualUsuario)
         {
