@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,8 @@ namespace Piedra_Papel_Tijeras
         private BD repository = new BD();
         private Contadores matrizActual = new Contadores();
         private LogicaBot logicaBot = new LogicaBot();
+        int countJugador = 0;
+        int countBot = 0;
 
         private int ultimaJugadaUsuario = 0;
         public FormGame()
@@ -61,7 +64,11 @@ namespace Piedra_Papel_Tijeras
         private async Task JugarRondaAsync(int jugadaActualUsuario)
         {
             int jugadaBot = logicaBot.Predecir(ultimaJugadaUsuario, matrizActual);
-            EvaluarGanador(jugadaActualUsuario, jugadaBot);
+            label2.Text = EvaluarGanador(jugadaActualUsuario, jugadaBot);
+            ContadoresVisibles(EvaluarGanador(jugadaActualUsuario, jugadaBot));
+            if (jugadaBot == 1) pictureBox8.Image = Properties.Resources.ManoPiedraRotada;
+            else if (jugadaBot == 2) pictureBox8.Image = Properties.Resources.ManoPapelRotada;
+            else if (jugadaBot == 3) pictureBox8.Image = Properties.Resources.ManoTijeraRotada;
             if (ultimaJugadaUsuario != 0)
             {
                 ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
@@ -71,19 +78,19 @@ namespace Piedra_Papel_Tijeras
         }
         private void ActualizarContadoresMatriz(int anterior, int actual)
         {
-            if (anterior == 1) // Si antes jugó Piedra
+            if (anterior == 1) 
             {
                 if (actual == 1) matrizActual.Piedra_Piedra++;
                 else if (actual == 2) matrizActual.Piedra_Papel++;
                 else if (actual == 3) matrizActual.Piedra_Tijera++;
             }
-            else if (anterior == 2) // Si antes jugó Papel
+            else if (anterior == 2) 
             {
                 if (actual == 1) matrizActual.Papel_Piedra++;
                 else if (actual == 2) matrizActual.Papel_Papel++;
                 else if (actual == 3) matrizActual.Papel_Tijera++;
             }
-            else if (anterior == 3) // Si antes jugó Tijera
+            else if (anterior == 3)
             {
                 if (actual == 1) matrizActual.Tijera_Piedra++;
                 else if (actual == 2) matrizActual.Tijera_Papel++;
@@ -108,6 +115,17 @@ namespace Piedra_Papel_Tijeras
             }
             return "¡Gana el Bot!";
         }
+        private void ContadoresVisibles(string resultado) {
+            
+            switch (resultado) { 
+            case "¡Ganaste tú!":
+                   label3.Text = ("HUMANO:" + ++countJugador).ToString();
+                    break;
+            case "¡Gana el Bot!":
+                    label4.Text = ("BOT:" + ++countBot).ToString();
+                    break;
+            }
 
+        }
     }
 }
