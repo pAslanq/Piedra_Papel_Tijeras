@@ -126,6 +126,7 @@
   </data>
   <data name="icons8-ajustes-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-ajustes-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="b1323cbb-6436-4c78-b16b-21fb4ddf2b9c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\b1323cbb-6436-4c78-b16b-21fb4ddf2b9c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -170,6 +171,7 @@
   </data>
   <data name="Gemini_Generated_Image_dmf1o2dmf1o2dmf1-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_dmf1o2dmf1o2dmf1-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ManoTijera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoTijera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,6 +237,7 @@
   </data>
   <data name="Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ManoPapel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoPapel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -259,8 +262,9 @@
   <data name="ManoPiedraRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoPiedraRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo peleas.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo peleas.jpg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <data name="fondo peleas.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		  <value>..\Resources\fondoPeleas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
   <data name="fondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

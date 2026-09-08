@@ -63,12 +63,14 @@ namespace Piedra_Papel_Tijeras
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+            JugarRondaAsync(1);
+            pictureBox6.Image = Properties.Resources.ManoPiedra;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+            JugarRondaAsync(2);
+            pictureBox6.Image = Properties.Resources.ManoPapel;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -164,28 +166,14 @@ namespace Piedra_Papel_Tijeras
 
         }
 
-        private void pictureBox2_Click_1(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)
         {
-            JugarRondaAsync(1);
-            pictureBox6.Image = Properties.Resources.ManoPiedra;
+            Form1 Principal = new Form1();
+            Principal.Visible = true;
+            this.Visible = false;
         }
 
-        private void pictureBox3_Click_1(object sender, EventArgs e)
-        {
-            JugarRondaAsync(2);
-            pictureBox6.Image = Properties.Resources.ManoPapel;
-        }
-
-        private void pictureBox4_Click_1(object sender, EventArgs e)
-        {
-            JugarRondaAsync(3);
-            pictureBox6.Image = Properties.Resources.ManoTijera;
-        private void MenuButton_Click(object sender, EventArgs e)
-        {
-            Sidebar_Timer.Start();
-        }
-
-        private void Sidebar_Timer_Tick(object sender, EventArgs e)
+        private void Sidebar_Timer_Tick_1(object sender, EventArgs e)
         {
             //Controla el maximo y minimo del sidebar, expandiendolo o contrayendolo dependiendo de su estado
             if (siderbarExpand)
@@ -208,11 +196,9 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void MenuButton_Click(object sender, EventArgs e)
         {
-            Form1 Principal = new Form1();
-            Principal.Visible = true;
-            this.Visible = false;
+            Sidebar_Timer.Start();
         }
     }
 }
