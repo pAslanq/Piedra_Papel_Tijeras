@@ -200,6 +200,31 @@
     <None Include="Resources\ManoPapel.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\BotRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotHappy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotDamage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangoAngry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangoSad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangoHappy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chango.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo peleas.jpg.jpeg" />
     <None Include="Resources\fondo2.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
