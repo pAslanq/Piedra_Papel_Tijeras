@@ -99,10 +99,6 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private string EvaluarGanador(int usuario, int bot)
         {
