@@ -60,18 +60,18 @@
             this.Sidebar.Controls.Add(this.panel5);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.Sidebar.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.Sidebar.Location = new System.Drawing.Point(3117, 0);
+            this.Sidebar.Location = new System.Drawing.Point(1390, 0);
             this.Sidebar.MaximumSize = new System.Drawing.Size(247, 0);
             this.Sidebar.MinimumSize = new System.Drawing.Size(70, 0);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(247, 1201);
+            this.Sidebar.Size = new System.Drawing.Size(70, 980);
             this.Sidebar.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.MenuButton);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 1122);
+            this.panel1.Location = new System.Drawing.Point(3, 901);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 76);
             this.panel1.TabIndex = 2;
@@ -100,7 +100,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(3, 1016);
+            this.panel3.Location = new System.Drawing.Point(3, 795);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(265, 100);
             this.panel3.TabIndex = 5;
@@ -126,7 +126,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.button4);
-            this.panel4.Location = new System.Drawing.Point(3, 923);
+            this.panel4.Location = new System.Drawing.Point(3, 702);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(265, 87);
             this.panel4.TabIndex = 5;
@@ -152,7 +152,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.button5);
-            this.panel5.Location = new System.Drawing.Point(3, 817);
+            this.panel5.Location = new System.Drawing.Point(3, 596);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(244, 100);
             this.panel5.TabIndex = 5;
@@ -183,10 +183,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Piedra_Papel_Tijeras.Properties.Resources.TituloPiedraPapelTijeras;
-            this.pictureBox1.Location = new System.Drawing.Point(1427, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(424, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(536, 283);
+            this.pictureBox1.Size = new System.Drawing.Size(667, 381);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -195,29 +196,34 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::Piedra_Papel_Tijeras.Properties.Resources.Play;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1597, 605);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(645, 495);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.MaximumSize = new System.Drawing.Size(200, 200);
             this.button1.MinimumSize = new System.Drawing.Size(200, 200);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 200);
             this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3364, 1201);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Piedra_Papel_Tijeras.Properties.Resources.fondo2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1460, 980);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menú Principal";

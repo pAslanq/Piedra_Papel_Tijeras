@@ -46,5 +46,10 @@ namespace Piedra_Papel_Tijeras
             }
             return new Contadores();
         }
+
+        internal async Task ContadoresAsync(LogicaBot matrizActual)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

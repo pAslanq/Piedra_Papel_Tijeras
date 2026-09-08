@@ -43,12 +43,17 @@ namespace Piedra_Papel_Tijeras
 
             switch (predic)
             {
-                case 1:     return 2;   break;
-                case 2:     return 3;   break;
-                case 3:     return 1;   break;
-                default:    return ram.Next(1, 4); break;
+                case 1:     return 2;  
+                case 2:     return 3;  
+                case 3:     return 1;   
+                default:    return ram.Next(1, 4); 
 
             }
+        }
+
+        public static implicit operator LogicaBot(Contadores v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
