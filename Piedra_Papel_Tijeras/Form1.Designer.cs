@@ -60,11 +60,11 @@
             this.Sidebar.Controls.Add(this.panel5);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.Sidebar.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.Sidebar.Location = new System.Drawing.Point(1295, 0);
+            this.Sidebar.Location = new System.Drawing.Point(1390, 0);
             this.Sidebar.MaximumSize = new System.Drawing.Size(247, 0);
             this.Sidebar.MinimumSize = new System.Drawing.Size(70, 0);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(165, 980);
+            this.Sidebar.Size = new System.Drawing.Size(70, 980);
             this.Sidebar.TabIndex = 3;
             // 
             // panel1

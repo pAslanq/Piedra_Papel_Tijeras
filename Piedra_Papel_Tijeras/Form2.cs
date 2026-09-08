@@ -14,6 +14,7 @@ namespace Piedra_Papel_Tijeras
     
     public partial class FormGame : Form
     {
+        bool siderbarExpand; // Variable para controlar el estado del sidebar
         private BD repository = new BD();
         private Contadores matrizActual = new Contadores();
         private LogicaBot logicaBot = new LogicaBot();
@@ -126,6 +127,41 @@ namespace Piedra_Papel_Tijeras
                     break;
             }
 
+        }
+
+        private void MenuButton_Click(object sender, EventArgs e)
+        {
+            Sidebar_Timer.Start();
+        }
+
+        private void Sidebar_Timer_Tick(object sender, EventArgs e)
+        {
+            //Controla el maximo y minimo del sidebar, expandiendolo o contrayendolo dependiendo de su estado
+            if (siderbarExpand)
+            {
+                Sidebar.Width -= 10;
+                if (Sidebar.Width == Sidebar.MinimumSize.Width)
+                {
+                    siderbarExpand = false;
+                    Sidebar_Timer.Stop();
+                }
+            }
+            else
+            {
+                Sidebar.Width += 10;
+                if (Sidebar.Width == Sidebar.MaximumSize.Width)
+                {
+                    siderbarExpand = true;
+                    Sidebar_Timer.Stop();
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form1 Principal = new Form1();
+            Principal.Visible = true;
+            this.Visible = false;
         }
     }
 }
