@@ -176,6 +176,9 @@ namespace Piedra_Papel_Tijeras.Properties {
         internal static System.Drawing.Bitmap fondo_peleas_jpg {
             get {
                 object obj = ResourceManager.GetObject("fondo peleas.jpg", resourceCulture);
+        internal static System.Drawing.Bitmap fondo2 {
+            get {
+                object obj = ResourceManager.GetObject("fondo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
