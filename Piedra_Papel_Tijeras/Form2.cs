@@ -178,7 +178,7 @@ namespace Piedra_Papel_Tijeras
             //Controla el maximo y minimo del sidebar, expandiendolo o contrayendolo dependiendo de su estado
             if (siderbarExpand)
             {
-                Sidebar.Width -= 10;
+                Sidebar.Width -= 3;
                 if (Sidebar.Width == Sidebar.MinimumSize.Width)
                 {
                     siderbarExpand = false;
@@ -187,7 +187,7 @@ namespace Piedra_Papel_Tijeras
             }
             else
             {
-                Sidebar.Width += 10;
+                Sidebar.Width += 3;
                 if (Sidebar.Width == Sidebar.MaximumSize.Width)
                 {
                     siderbarExpand = true;
