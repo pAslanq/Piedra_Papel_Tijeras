@@ -224,6 +224,7 @@
     <None Include="Resources\Chango.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fondo peleas.jpg.jpeg" />
     <Content Include="Resources\fondoPeleas.jpg" />
     <None Include="Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg" />
     <None Include="Resources\fondo2.jpeg" />

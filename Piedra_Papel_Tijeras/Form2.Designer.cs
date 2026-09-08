@@ -122,7 +122,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(829, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 7;
             // 
             // panel1
@@ -137,7 +137,7 @@
             // 
             // Sidebar
             // 
-            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Sidebar.BackColor = System.Drawing.Color.Gray;
             this.Sidebar.Controls.Add(this.panel2);
             this.Sidebar.Controls.Add(this.panel3);
             this.Sidebar.Controls.Add(this.panel4);
@@ -417,8 +417,11 @@
             // 
             // FormGame
             // 
+            this.BackgroundImage = global::Piedra_Papel_Tijeras.Properties.Resources.fondo_peleas1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1457, 949);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGame";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

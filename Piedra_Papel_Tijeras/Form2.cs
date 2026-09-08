@@ -16,7 +16,7 @@ namespace Piedra_Papel_Tijeras
     {
 
         private const int LIMITE_APRENDIZAJE = 200;
-        bool siderbarExpand; // Variable para controlar el estado del sidebar
+        bool siderbarExpand; 
         private BD repository = new BD();
         private Contadores matrizActual = new Contadores();
         private LogicaBot logicaBot = new LogicaBot();
@@ -31,6 +31,8 @@ namespace Piedra_Papel_Tijeras
             this.SetVisibleCore(false);
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
+            pictureBox6.Visible = false;
+            pictureBox8.Visible = false;
 
             HabilitarDobleBufer(this);
 
@@ -80,12 +82,26 @@ namespace Piedra_Papel_Tijeras
         }
         private async Task JugarRondaAsync(int jugadaActualUsuario)
         {
+            pictureBox6.Visible = true;
+            pictureBox8.Visible = true;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
             int jugadaBot = logicaBot.Predecir(ultimaJugadaUsuario, matrizActual);
             string ganador = EvaluarGanador(jugadaActualUsuario, jugadaBot);
             ContadoresVisibles(ganador);
-            if (jugadaBot == 1) pictureBox8.Image = Properties.Resources.ManoPiedraRotada;
-            else if (jugadaBot == 2) pictureBox8.Image = Properties.Resources.ManoPapelRotada;
-            else if (jugadaBot == 3) pictureBox8.Image = Properties.Resources.ManoTijeraRotada;
+            if (jugadaBot == 1)
+            {
+                pictureBox8.Image = Properties.Resources.ManoPiedraRotada;
+            }
+            else if (jugadaBot == 2)
+            {
+                pictureBox8.Image = Properties.Resources.ManoPapelRotada;
+            }
+            else if (jugadaBot == 3)
+            {
+                pictureBox8.Image = Properties.Resources.ManoTijeraRotada;
+            }
             if(ganador == "¡Ganaste tú!")
             {
                 pictureBox5.Image = Properties.Resources.ChangoHappy;
@@ -99,7 +115,14 @@ namespace Piedra_Papel_Tijeras
                 pictureBox5.Image = Properties.Resources.ChangoAngry;
                 pictureBox9.Image = Properties.Resources.BotDamage;
             }
-            await Task.Delay(2000);
+            await Task.Delay(800);
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
+            pictureBox6.Image = Properties.Resources.ManoPiedra;
+            pictureBox8.Image = Properties.Resources.ManoPiedraRotada;
+            pictureBox6.Visible = false;
+            pictureBox8.Visible = false;
             pictureBox5.Image = Properties.Resources.Chango;
             pictureBox9.Image = Properties.Resources.Bot;
             if (ultimaJugadaUsuario != 0)

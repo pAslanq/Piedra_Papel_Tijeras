@@ -44,7 +44,7 @@ namespace Piedra_Papel_Tijeras
         {
             if (siderbarExpand)
             {
-                Sidebar.Width -=4;
+                Sidebar.Width -=2;
                 if (Sidebar.Width == Sidebar.MinimumSize.Width)
                 {
                     siderbarExpand = false;
@@ -53,7 +53,7 @@ namespace Piedra_Papel_Tijeras
             }
             else
             {
-                Sidebar.Width += 3;
+                Sidebar.Width +=2;
                 if (Sidebar.Width == Sidebar.MaximumSize.Width)
                 {
                     siderbarExpand = true;
