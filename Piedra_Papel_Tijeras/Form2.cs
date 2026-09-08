@@ -14,6 +14,7 @@ namespace Piedra_Papel_Tijeras
     
     public partial class FormGame : Form
     {
+        private const int LIMITE_APRENDIZAJE = 200;
         bool siderbarExpand; // Variable para controlar el estado del sidebar
         private BD repository = new BD();
         private Contadores matrizActual = new Contadores();
@@ -79,6 +80,13 @@ namespace Piedra_Papel_Tijeras
         }
         private void ActualizarContadoresMatriz(int anterior, int actual)
         {
+            if (matrizActual.Total_Aprendizaje >= LIMITE_APRENDIZAJE)
+            {
+                return;
+            }
+
+            matrizActual.Total_Aprendizaje++;
+
             if (anterior == 1) 
             {
                 if (actual == 1) matrizActual.Piedra_Piedra++;
@@ -97,6 +105,8 @@ namespace Piedra_Papel_Tijeras
                 else if (actual == 2) matrizActual.Tijera_Papel++;
                 else if (actual == 3) matrizActual.Tijera_Tijera++;
             }
+            Console.WriteLine($"[IA Aprendizaje] Transiciones registradas: {matrizActual.Total_Aprendizaje} / {LIMITE_APRENDIZAJE}");
+            System.Diagnostics.Debug.WriteLine($"[DEBUG] Total_Aprendizaje = {matrizActual.Total_Aprendizaje}");
         }
 
 
