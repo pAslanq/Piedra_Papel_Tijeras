@@ -49,9 +49,19 @@ namespace Piedra_Papel_Tijeras
                 HabilitarDobleBufer(hijo);
             }
         }
-        private async Task FormGame_LoadAsync(object sender, EventArgs e)
+        private async Task FormGame_Load(object sender, EventArgs e)
         {
-            matrizActual = await repository.ObtenerContadoresAsync();
+            try
+            {
+                // Traemos el acumulado histórico de Firebase
+                matrizActual = await repository.ObtenerContadoresAsync(); 
+        
+                System.Diagnostics.Debug.WriteLine($" Se cargaron {matrizActual.Total_Aprendizaje} jugadas de la BD."); 
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($" No se pudo cargar de Firebase: {ex.Message}");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -128,7 +138,10 @@ namespace Piedra_Papel_Tijeras
             if (ultimaJugadaUsuario != 0)
             {
                 ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
+                matrizActual.Total_Aprendizaje++;
                 await repository.ContadoresAsync(matrizActual);
+
+                System.Diagnostics.Debug.WriteLine($"Nuevo total de jugadas: {matrizActual.Total_Aprendizaje}");
             }
             ultimaJugadaUsuario = jugadaActualUsuario;
         }
@@ -138,8 +151,6 @@ namespace Piedra_Papel_Tijeras
             {
                 return;
             }
-
-            matrizActual.Total_Aprendizaje++;
 
             if (anterior == 1) 
             {
@@ -159,8 +170,6 @@ namespace Piedra_Papel_Tijeras
                 else if (actual == 2) matrizActual.Tijera_Papel++;
                 else if (actual == 3) matrizActual.Tijera_Tijera++;
             }
-            Console.WriteLine($"[IA Aprendizaje] Transiciones registradas: {matrizActual.Total_Aprendizaje} / {LIMITE_APRENDIZAJE}");
-            System.Diagnostics.Debug.WriteLine($"[DEBUG] Total_Aprendizaje = {matrizActual.Total_Aprendizaje}");
         }
 
 
@@ -180,12 +189,13 @@ namespace Piedra_Papel_Tijeras
             
             switch (resultado) { 
             case "¡Ganaste tú!":
-                   label3.Text = ("HUMANO:" + ++countJugador).ToString();
+                   label3.Text = ("JUGADOR: " + ++countJugador).ToString();
                     break;
             case "¡Gana el Bot!":
-                    label4.Text = ("BOT:" + ++countBot).ToString();
+                    label4.Text = ("BOT: " + ++countBot).ToString();
                     break;
             }
+            label6.Text = (resultado).ToString();
 
         }
 
@@ -223,6 +233,11 @@ namespace Piedra_Papel_Tijeras
         private void MenuButton_Click(object sender, EventArgs e)
         {
             Sidebar_Timer.Start();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
