@@ -100,6 +100,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -197,6 +198,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ManoPapel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotHappy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotDamage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangoAngry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangoSad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangoHappy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chango.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo peleas.jpg.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

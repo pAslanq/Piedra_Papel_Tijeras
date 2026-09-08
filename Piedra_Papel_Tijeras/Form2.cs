@@ -14,11 +14,13 @@ namespace Piedra_Papel_Tijeras
     
     public partial class FormGame : Form
     {
+
         private BD repository = new BD();
         private Contadores matrizActual = new Contadores();
         private LogicaBot logicaBot = new LogicaBot();
         int countJugador = 0;
         int countBot = 0;
+
 
         private int ultimaJugadaUsuario = 0;
         public FormGame()
@@ -28,8 +30,21 @@ namespace Piedra_Papel_Tijeras
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
 
-        }
+            HabilitarDobleBufer(this);
 
+        }
+        private void HabilitarDobleBufer(Control control)
+        {
+            typeof(Control).GetProperty("DoubleBuffered",
+                System.Reflection.BindingFlags.NonPublic |
+                System.Reflection.BindingFlags.Instance)
+                ?.SetValue(control, true, null);
+
+            foreach (Control hijo in control.Controls)
+            {
+                HabilitarDobleBufer(hijo);
+            }
+        }
         private async Task FormGame_LoadAsync(object sender, EventArgs e)
         {
             matrizActual = await repository.ObtenerContadoresAsync();
@@ -46,14 +61,12 @@ namespace Piedra_Papel_Tijeras
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            JugarRondaAsync(1);
-            pictureBox6.Image = Properties.Resources.ManoPiedra;
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            JugarRondaAsync(2);
-            pictureBox6.Image = Properties.Resources.ManoPapel;
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -64,11 +77,27 @@ namespace Piedra_Papel_Tijeras
         private async Task JugarRondaAsync(int jugadaActualUsuario)
         {
             int jugadaBot = logicaBot.Predecir(ultimaJugadaUsuario, matrizActual);
-            label2.Text = EvaluarGanador(jugadaActualUsuario, jugadaBot);
-            ContadoresVisibles(EvaluarGanador(jugadaActualUsuario, jugadaBot));
+            string ganador = EvaluarGanador(jugadaActualUsuario, jugadaBot);
+            ContadoresVisibles(ganador);
             if (jugadaBot == 1) pictureBox8.Image = Properties.Resources.ManoPiedraRotada;
             else if (jugadaBot == 2) pictureBox8.Image = Properties.Resources.ManoPapelRotada;
             else if (jugadaBot == 3) pictureBox8.Image = Properties.Resources.ManoTijeraRotada;
+            if(ganador == "¡Ganaste tú!")
+            {
+                pictureBox5.Image = Properties.Resources.ChangoHappy;
+                pictureBox9.Image = Properties.Resources.BotRed;
+            } else if(ganador == "¡Gana el Bot!")
+            {
+                pictureBox5.Image = Properties.Resources.ChangoSad;
+                pictureBox9.Image = Properties.Resources.BotHappy;
+            } else
+            {
+                pictureBox5.Image = Properties.Resources.ChangoAngry;
+                pictureBox9.Image = Properties.Resources.BotDamage;
+            }
+            await Task.Delay(2000);
+            pictureBox5.Image = Properties.Resources.Chango;
+            pictureBox9.Image = Properties.Resources.Bot;
             if (ultimaJugadaUsuario != 0)
             {
                 ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
@@ -126,6 +155,24 @@ namespace Piedra_Papel_Tijeras
                     break;
             }
 
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            JugarRondaAsync(1);
+            pictureBox6.Image = Properties.Resources.ManoPiedra;
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            JugarRondaAsync(2);
+            pictureBox6.Image = Properties.Resources.ManoPapel;
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            JugarRondaAsync(3);
+            pictureBox6.Image = Properties.Resources.ManoTijera;
         }
     }
 }
