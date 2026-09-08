@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
@@ -116,14 +118,17 @@ namespace Piedra_Papel_Tijeras
             {
                 pictureBox5.Image = Properties.Resources.ChangoHappy;
                 pictureBox9.Image = Properties.Resources.BotRed;
+                ReproducirSonido(Properties.Resources.win_monkey);
             } else if(ganador == "¡Gana el Bot!")
             {
                 pictureBox5.Image = Properties.Resources.ChangoSad;
                 pictureBox9.Image = Properties.Resources.BotHappy;
+                ReproducirSonido(Properties.Resources.mad_monkey);
             } else
             {
                 pictureBox5.Image = Properties.Resources.ChangoAngry;
                 pictureBox9.Image = Properties.Resources.BotDamage;
+                ReproducirSonido(Properties.Resources.tite);
             }
             await Task.Delay(800);
             pictureBox2.Visible = true;
@@ -235,9 +240,20 @@ namespace Piedra_Papel_Tijeras
             Sidebar_Timer.Start();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void ReproducirSonido(Stream audioStream)
         {
-
+            try
+            {
+                if (audioStream != null)
+                {
+                    SoundPlayer player = new SoundPlayer(audioStream);
+                    player.Play(); // Play() ejecuta el sonido en segundo plano sin congelar la UI
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error al reproducir audio: {ex.Message}");
+            }
         }
     }
 }
