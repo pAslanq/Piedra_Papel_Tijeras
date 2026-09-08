@@ -198,10 +198,10 @@ namespace Piedra_Papel_Tijeras
 
         private void Sidebar_Timer_Tick_1(object sender, EventArgs e)
         {
-            //Controla el maximo y minimo del sidebar, expandiendolo o contrayendolo dependiendo de su estado
+            Sidebar.SuspendLayout();
             if (siderbarExpand)
             {
-                Sidebar.Width -= 3;
+                Sidebar.Width -=10;
                 if (Sidebar.Width == Sidebar.MinimumSize.Width)
                 {
                     siderbarExpand = false;
@@ -210,13 +210,14 @@ namespace Piedra_Papel_Tijeras
             }
             else
             {
-                Sidebar.Width += 3;
+                Sidebar.Width +=10;
                 if (Sidebar.Width == Sidebar.MaximumSize.Width)
                 {
                     siderbarExpand = true;
                     Sidebar_Timer.Stop();
                 }
             }
+            Sidebar.ResumeLayout();
         }
 
         private void MenuButton_Click(object sender, EventArgs e)

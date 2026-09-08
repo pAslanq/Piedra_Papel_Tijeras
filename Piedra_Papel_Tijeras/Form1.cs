@@ -42,9 +42,10 @@ namespace Piedra_Papel_Tijeras
 
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
         {
+            Sidebar.SuspendLayout();
             if (siderbarExpand)
             {
-                Sidebar.Width -=2;
+                Sidebar.Width -=10;
                 if (Sidebar.Width == Sidebar.MinimumSize.Width)
                 {
                     siderbarExpand = false;
@@ -53,13 +54,14 @@ namespace Piedra_Papel_Tijeras
             }
             else
             {
-                Sidebar.Width +=2;
+                Sidebar.Width +=10;
                 if (Sidebar.Width == Sidebar.MaximumSize.Width)
                 {
                     siderbarExpand = true;
                     Sidebar_Timer.Stop();
                 }
             }
+            Sidebar.ResumeLayout();
         }
 
         private void MenuButton_Click(object sender, EventArgs e)
