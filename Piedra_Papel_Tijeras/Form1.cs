@@ -12,25 +12,42 @@ namespace Piedra_Papel_Tijeras
 {
     public partial class Form1 : Form
     {
+        private BD repository = new BD();
+        private Contadores matrizActual = new Contadores();
+
         bool siderbarExpand; // Variable para controlar el estado del sidebar
         public Form1()
         {
             InitializeComponent();
+
+            HabilitarDobleBufer(this);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void HabilitarDobleBufer(Control control)
         {
+            typeof(Control).GetProperty("DoubleBuffered",
+                System.Reflection.BindingFlags.NonPublic |
+                System.Reflection.BindingFlags.Instance)
+                ?.SetValue(control, true, null);
 
+            foreach (Control hijo in control.Controls)
+            {
+                HabilitarDobleBufer(hijo);
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            try
+            {
+                matrizActual = await repository.ObtenerContadoresAsync(); 
+        
+                System.Diagnostics.Debug.WriteLine($" Se cargaron {matrizActual.Total_Aprendizaje} jugadas de la BD."); 
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($" No se pudo cargar de Firebase: {ex.Message}");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,9 +59,10 @@ namespace Piedra_Papel_Tijeras
 
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
         {
+            Sidebar.SuspendLayout();
             if (siderbarExpand)
             {
-                Sidebar.Width -=4;
+                Sidebar.Width -=10;
                 if (Sidebar.Width == Sidebar.MinimumSize.Width)
                 {
                     siderbarExpand = false;
@@ -53,13 +71,14 @@ namespace Piedra_Papel_Tijeras
             }
             else
             {
-                Sidebar.Width += 3;
+                Sidebar.Width +=10;
                 if (Sidebar.Width == Sidebar.MaximumSize.Width)
                 {
                     siderbarExpand = true;
                     Sidebar_Timer.Stop();
                 }
             }
+            Sidebar.ResumeLayout();
         }
 
         private void MenuButton_Click(object sender, EventArgs e)

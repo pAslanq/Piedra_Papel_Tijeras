@@ -39,17 +39,12 @@ namespace Piedra_Papel_Tijeras
             if (db != null)
             {
                 FirebaseResponse response = await db.GetAsync("aprendizaje/global");
-                if (response.Body != "null")
+                if (response != null && response.Body != "null")
                 {
                     return response.ResultAs<Contadores>();
                 }
             }
             return new Contadores();
-        }
-
-        internal async Task ContadoresAsync(LogicaBot matrizActual)
-        {
-            throw new NotImplementedException();
         }
     }
 }
