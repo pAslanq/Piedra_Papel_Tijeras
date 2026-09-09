@@ -53,7 +53,7 @@
             // 
             // Sidebar
             // 
-            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Sidebar.BackColor = System.Drawing.Color.Gray;
             this.Sidebar.Controls.Add(this.panel1);
             this.Sidebar.Controls.Add(this.panel3);
             this.Sidebar.Controls.Add(this.panel4);
@@ -143,9 +143,9 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button4.Image = global::Piedra_Papel_Tijeras.Properties.Resources.knowledge_18514026__3_1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-19, 3);
+            this.button4.Location = new System.Drawing.Point(7, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(251, 70);
+            this.button4.Size = new System.Drawing.Size(225, 70);
             this.button4.TabIndex = 1;
             this.button4.Text = "MOSTRAR APRENDIZAJE";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -195,7 +195,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
