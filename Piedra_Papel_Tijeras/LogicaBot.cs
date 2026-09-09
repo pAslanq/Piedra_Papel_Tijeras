@@ -51,9 +51,5 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        public static implicit operator LogicaBot(Contadores v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

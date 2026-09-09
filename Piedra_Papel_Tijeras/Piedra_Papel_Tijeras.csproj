@@ -233,6 +233,8 @@
     <None Include="Resources\Chango.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\restart-icon1.jpg" />
+    <None Include="Resources\restart-icon.jpg" />
     <None Include="Resources\Opciones.png" />
     <None Include="Resources\YouWin.png" />
     <None Include="Resources\YouLouse.png" />

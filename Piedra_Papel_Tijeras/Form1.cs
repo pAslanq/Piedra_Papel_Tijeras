@@ -19,7 +19,7 @@ namespace Piedra_Papel_Tijeras
         public Form1()
         {
             InitializeComponent();
-
+            
             HabilitarDobleBufer(this);
         }
 
@@ -81,17 +81,17 @@ namespace Piedra_Papel_Tijeras
             Sidebar.ResumeLayout();
         }
 
-        private void MenuButton_Click(object sender, EventArgs e)
-        {
-            Sidebar_Timer.Start();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void MenuButton_Click_1(object sender, EventArgs e)
+        {
+            Sidebar_Timer.Start();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
             Form3 aprendizaje = new Form3();
             aprendizaje.Visible = true;
@@ -100,7 +100,7 @@ namespace Piedra_Papel_Tijeras
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

@@ -30,15 +30,15 @@ namespace Piedra_Papel_Tijeras
         public FormGame()
         {
             InitializeComponent();
-            this.Load += async (s, e) => await CargarDatosBaseDatosAsync();
+            this.Load += async (s, e) => await CargarDatosAsync();
             this.SetVisibleCore(false);
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
             pictureBox6.Visible = false;
             pictureBox8.Visible = false;
-
+            
             HabilitarDobleBufer(this);
-
+            
         }
         private void HabilitarDobleBufer(Control control)
         {
@@ -53,19 +53,10 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-            Form1 form1 = new Form1();
-            this.Visible = false;
-            form1.Visible = true;
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             JugarRondaAsync(1);
-            pictureBox6.Image = Properties.Resources.ManoPiedra;
+            pictureBox6.Image = Properties.Resources.ManoPiedra; 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -134,21 +125,21 @@ namespace Piedra_Papel_Tijeras
             if (ultimaJugadaUsuario != 0)
             {
                 ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
-                matrizActual.Total_Aprendizaje++;
-                await repository.ContadoresAsync(matrizActual);
+                
+                await repository.ObtenerContadoresAsync(matrizActual);
 
                 System.Diagnostics.Debug.WriteLine($"Nuevo total de jugadas: {matrizActual.Total_Aprendizaje}");
             }
 
             ultimaJugadaUsuario = jugadaActualUsuario;
         }
-        private void ActualizarContadoresMatriz(int anterior, int actual)
+        public void ActualizarContadoresMatriz(int anterior, int actual)
         {
             if (matrizActual.Total_Aprendizaje >= LIMITE_APRENDIZAJE)
             {
                 return;
             }
-
+            matrizActual.Total_Aprendizaje++;
             if (anterior == 1) 
             {
                 if (actual == 1) matrizActual.Piedra_Piedra++;
@@ -252,7 +243,7 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        private async Task CargarDatosBaseDatosAsync()
+        private async Task CargarDatosAsync()
         {
             try
             {
@@ -267,9 +258,11 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            Form3 aprendizaje = new Form3();
+            aprendizaje.Visible = true;
+            this.Visible = false;
         }
     }
 }
