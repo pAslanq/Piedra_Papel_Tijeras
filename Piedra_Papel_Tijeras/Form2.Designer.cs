@@ -51,11 +51,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Sidebar_Timer = new System.Windows.Forms.Timer(this.components);
             this.label6 = new System.Windows.Forms.Label();
+            this.Sidebar_Timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.Sidebar.SuspendLayout();
@@ -370,6 +370,16 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(829, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(330, 70);
+            this.label2.TabIndex = 8;
+            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -381,16 +391,6 @@
             this.label4.Size = new System.Drawing.Size(162, 55);
             this.label4.TabIndex = 10;
             this.label4.Text = "BOT:0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(829, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(330, 70);
-            this.label2.TabIndex = 8;
             // 
             // label3
             // 
@@ -405,11 +405,6 @@
             this.label3.Text = "JUGADOR: 0";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Sidebar_Timer
-            // 
-            this.Sidebar_Timer.Interval = 10;
-            this.Sidebar_Timer.Tick += new System.EventHandler(this.Sidebar_Timer_Tick_1);
-            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -422,6 +417,11 @@
             this.label6.Size = new System.Drawing.Size(312, 55);
             this.label6.TabIndex = 14;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Sidebar_Timer
+            // 
+            this.Sidebar_Timer.Interval = 10;
+            this.Sidebar_Timer.Tick += new System.EventHandler(this.Sidebar_Timer_Tick_1);
             // 
             // FormGame
             // 

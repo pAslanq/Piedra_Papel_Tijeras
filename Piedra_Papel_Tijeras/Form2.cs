@@ -30,6 +30,7 @@ namespace Piedra_Papel_Tijeras
         public FormGame()
         {
             InitializeComponent();
+            this.Load += async (s, e) => await CargarDatosBaseDatosAsync();
             this.SetVisibleCore(false);
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
@@ -49,20 +50,6 @@ namespace Piedra_Papel_Tijeras
             foreach (Control hijo in control.Controls)
             {
                 HabilitarDobleBufer(hijo);
-            }
-        }
-        private async Task FormGame_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                // Traemos el acumulado histórico de Firebase
-                matrizActual = await repository.ObtenerContadoresAsync(); 
-        
-                System.Diagnostics.Debug.WriteLine($" Se cargaron {matrizActual.Total_Aprendizaje} jugadas de la BD."); 
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($" No se pudo cargar de Firebase: {ex.Message}");
             }
         }
 
@@ -140,6 +127,8 @@ namespace Piedra_Papel_Tijeras
             pictureBox8.Visible = false;
             pictureBox5.Image = Properties.Resources.Chango;
             pictureBox9.Image = Properties.Resources.Bot;
+
+
             if (ultimaJugadaUsuario != 0)
             {
                 ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
@@ -148,6 +137,7 @@ namespace Piedra_Papel_Tijeras
 
                 System.Diagnostics.Debug.WriteLine($"Nuevo total de jugadas: {matrizActual.Total_Aprendizaje}");
             }
+
             ultimaJugadaUsuario = jugadaActualUsuario;
         }
         private void ActualizarContadoresMatriz(int anterior, int actual)
@@ -253,6 +243,21 @@ namespace Piedra_Papel_Tijeras
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Error al reproducir audio: {ex.Message}");
+            }
+        }
+
+        private async Task CargarDatosBaseDatosAsync()
+        {
+            try
+            {
+                // Traemos el acumulado histórico de Firebase y lo asignamos a la variable principal
+                matrizActual = await repository.ObtenerContadoresAsync();
+
+                System.Diagnostics.Debug.WriteLine($"[ÉXITO] Se cargaron {matrizActual.Total_Aprendizaje} jugadas de la BD.");
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[ERROR] No se pudo cargar de Firebase: {ex.Message}");
             }
         }
     }
