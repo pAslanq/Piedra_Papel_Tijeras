@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.IO;
 using System.Reflection;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Piedra_Papel_Tijeras
@@ -12,6 +13,7 @@ namespace Piedra_Papel_Tijeras
     {
         bool siderbarExpand; // Variable para controlar el estado del sidebar
         private BD bd;
+        private Contadores matrizActual = new Contadores();
         private PrivateFontCollection coleccionFuentes;
 
 
@@ -21,8 +23,7 @@ namespace Piedra_Papel_Tijeras
             bd = new BD();
             this.Load += Form3_Load;
             HabilitarDobleBufer(this);
-
-
+            this.FormBorderStyle = FormBorderStyle.None;
         }
         private void HabilitarDobleBufer(Control control)
         {
@@ -114,5 +115,14 @@ namespace Piedra_Papel_Tijeras
             this.Visible = false;
             form1.Visible = true;
         }
+
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            matrizActual.ReiniciarContadores();
+            await bd.ObtenerContadoresAsync(matrizActual);
+            Form3_Load(sender, e);
+        }
+
     }
 }

@@ -130,6 +130,9 @@
   <data name="EtiquetaBot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EtiquetaBot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="restart-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mad_monkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mad_monkey.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="Piedra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Piedra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tijera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tijera1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ChangoSad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChangoSad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +175,9 @@
   <data name="icons8-chicle--48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-chicle--48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondoTablav2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoTablav2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ChangoHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChangoHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,6 +189,9 @@
   </data>
   <data name="fondo peleas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo peleas.jpg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Opciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Opciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BotRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,26 +217,20 @@
   <data name="BotThink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotThink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BotDamage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BotDamage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-salida-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-salida-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BotNojao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BotNojao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ManoPapelRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoPapelRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tijera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tijera1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BotDamage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotDamage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_rs76pkrs76pkrs76" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoTablav2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoTablav2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BotNojao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotNojao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BotHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,7 +271,7 @@
   <data name="ManoPiedraRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoPiedraRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Opciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Opciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="restart-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart-icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

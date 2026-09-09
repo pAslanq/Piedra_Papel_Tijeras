@@ -25,7 +25,7 @@ namespace Piedra_Papel_Tijeras
         }
 
         //guardar contadores
-        public async Task ContadoresAsync(Contadores datos)
+        public async Task ObtenerContadoresAsync(Contadores datos)
         {
             if (db != null)
             {
