@@ -93,7 +93,9 @@ namespace Piedra_Papel_Tijeras
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            Form3 aprendizaje = new Form3();
+            aprendizaje.Visible = true;
+            this.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
