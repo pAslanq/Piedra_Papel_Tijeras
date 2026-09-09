@@ -233,8 +233,19 @@
     <None Include="Resources\Chango.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Opciones.png" />
+    <None Include="Resources\YouWin.png" />
+    <None Include="Resources\YouLouse.png" />
+    <None Include="Resources\NoWinner.png" />
+    <None Include="Resources\Gemini_Generated_Image_xy9p5hxy9p5hxy9p.jpg" />
+    <None Include="Resources\Gemini_Generated_Image_giudsgiudsgiudsg-Photoroom.png" />
     <None Include="Resources\fondoTablav2.jpeg" />
     <None Include="Resources\fondo peleas.jpg.jpeg" />
+    <None Include="Resources\EtiquetaMono.png" />
+    <None Include="Resources\EtiquetaBot.png" />
+    <None Include="Resources\EtiquetaBot1.png" />
+    <None Include="Resources\BotNojao.png" />
+    <None Include="Resources\BotThink.png" />
     <Content Include="Resources\fondoPeleas.jpg" />
     <None Include="Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg" />
     <None Include="Resources\fondo2.jpeg" />

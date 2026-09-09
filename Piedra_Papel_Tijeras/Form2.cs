@@ -104,7 +104,7 @@ namespace Piedra_Papel_Tijeras
             if(ganador == "¡Ganaste tú!")
             {
                 pictureBox5.Image = Properties.Resources.ChangoHappy;
-                pictureBox9.Image = Properties.Resources.BotRed;
+                pictureBox9.Image = Properties.Resources.BotNojao;
                 ReproducirSonido(Properties.Resources.win_monkey);
             } else if(ganador == "¡Gana el Bot!")
             {
@@ -114,7 +114,7 @@ namespace Piedra_Papel_Tijeras
             } else
             {
                 pictureBox5.Image = Properties.Resources.ChangoAngry;
-                pictureBox9.Image = Properties.Resources.BotDamage;
+                pictureBox9.Image = Properties.Resources.BotThink;
                 ReproducirSonido(Properties.Resources.tite);
             }
             await Task.Delay(800);
@@ -127,6 +127,8 @@ namespace Piedra_Papel_Tijeras
             pictureBox8.Visible = false;
             pictureBox5.Image = Properties.Resources.Chango;
             pictureBox9.Image = Properties.Resources.Bot;
+            await Task.Delay(200);
+            pictureBox10.Image = null;
 
 
             if (ultimaJugadaUsuario != 0)
@@ -184,13 +186,17 @@ namespace Piedra_Papel_Tijeras
             
             switch (resultado) { 
             case "¡Ganaste tú!":
-                   label3.Text = ("JUGADOR: " + ++countJugador).ToString();
+                   label3.Text = (++countJugador).ToString();
+                   pictureBox10.Image = Properties.Resources.YouWin;
                     break;
             case "¡Gana el Bot!":
-                    label4.Text = ("BOT: " + ++countBot).ToString();
+                    label4.Text = (++countBot).ToString();
+                    pictureBox10.Image = Properties.Resources.YouLouse;
+                    break;
+            default:
+                    pictureBox10.Image = Properties.Resources.NoWinner;
                     break;
             }
-            label6.Text = (resultado).ToString();
 
         }
 
@@ -259,6 +265,11 @@ namespace Piedra_Papel_Tijeras
             {
                 System.Diagnostics.Debug.WriteLine($"[ERROR] No se pudo cargar de Firebase: {ex.Message}");
             }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
