@@ -11,7 +11,7 @@ namespace Piedra_Papel_Tijeras
 {
     public partial class Form3 : Form
     {
-        bool siderbarExpand; // Variable para controlar el estado del sidebar
+        bool siderbarExpand; 
         private BD bd;
         private Contadores matrizActual = new Contadores();
         private PrivateFontCollection coleccionFuentes;
