@@ -10,6 +10,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace Piedra_Papel_Tijeras
 {
@@ -195,7 +196,7 @@ namespace Piedra_Papel_Tijeras
         {
             Form1 Principal = new Form1();
             Principal.Visible = true;
-            this.Visible = false;
+            this.Close();
         }
 
         private void Sidebar_Timer_Tick_1(object sender, EventArgs e)
@@ -233,8 +234,10 @@ namespace Piedra_Papel_Tijeras
             {
                 if (audioStream != null)
                 {
-                    SoundPlayer player = new SoundPlayer(audioStream);
-                    player.Play(); // Play() ejecuta el sonido en segundo plano sin congelar la UI
+                    using (SoundPlayer player = new SoundPlayer(audioStream))
+                    {
+                        player.Play(); 
+                    }
                 }
             }
             catch (Exception ex)
@@ -247,7 +250,6 @@ namespace Piedra_Papel_Tijeras
         {
             try
             {
-                // Traemos el acumulado histórico de Firebase y lo asignamos a la variable principal
                 matrizActual = await repository.ObtenerContadoresAsync();
 
                 System.Diagnostics.Debug.WriteLine($"[ÉXITO] Se cargaron {matrizActual.Total_Aprendizaje} jugadas de la BD.");
@@ -261,8 +263,25 @@ namespace Piedra_Papel_Tijeras
         private void button4_Click(object sender, EventArgs e)
         {
             Form3 aprendizaje = new Form3();
-            aprendizaje.Visible = true;
-            this.Visible = false;
+            aprendizaje.Show();
+            aprendizaje.FormClosed += (s, args) =>
+            {
+                this.Show();
+                GestorMusica.ReproducirEnBucle(Properties.Resources.peleaaa, "Pelea");
+            };
+            this.Hide();
+        }
+
+        private async void FormGame_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                GestorMusica.ReproducirEnBucle(Properties.Resources.peleaaa, "Pelea");
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[ERROR] No se pudo reproducir el sonido: {ex.Message}");
+            }
         }
     }
 }

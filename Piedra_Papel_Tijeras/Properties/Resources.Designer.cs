@@ -371,6 +371,15 @@ namespace Piedra_Papel_Tijeras.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Inicio {
+            get {
+                return ResourceManager.GetStream("Inicio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap knowledge_18514026__3_1 {
@@ -476,6 +485,15 @@ namespace Piedra_Papel_Tijeras.Properties {
             get {
                 object obj = ResourceManager.GetObject("Papel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream peleaaa {
+            get {
+                return ResourceManager.GetStream("peleaaa", resourceCulture);
             }
         }
         
