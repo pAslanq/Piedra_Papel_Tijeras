@@ -91,7 +91,6 @@
             this.button3.Text = "ENTRENAR";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -124,7 +123,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 100);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Regresar ";
+            this.button5.Text = "Salir";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);

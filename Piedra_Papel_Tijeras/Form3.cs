@@ -11,7 +11,7 @@ namespace Piedra_Papel_Tijeras
 {
     public partial class Form3 : Form
     {
-        bool siderbarExpand; // Variable para controlar el estado del sidebar
+        bool siderbarExpand; 
         private BD bd;
         private Contadores matrizActual = new Contadores();
         private PrivateFontCollection coleccionFuentes;
@@ -39,7 +39,14 @@ namespace Piedra_Papel_Tijeras
         }
         private async void Form3_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                GestorMusica.ReproducirEnBucle(Properties.Resources.Inicio, "Menu");
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[ERROR] No se pudo reproducir el sonido: {ex.Message}");
+            }
             dataGridView1.DataSource = null;
             var contadores = await bd.ObtenerContadoresAsync();
             dataGridView1.DataSource = ConstruirMatrizAprendizaje(contadores);
@@ -83,7 +90,6 @@ namespace Piedra_Papel_Tijeras
         }
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
         {
-            //Controla el maximo y minimo del sidebar, expandiendolo o contrayendolo dependiendo de su estado
             if (siderbarExpand)
             {
                 Sidebar.Width -= 10;
@@ -112,8 +118,9 @@ namespace Piedra_Papel_Tijeras
         private void button5_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
-            this.Visible = false;
+            this.Close();
             form1.Visible = true;
+
         }
 
 

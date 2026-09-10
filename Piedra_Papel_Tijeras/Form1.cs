@@ -15,7 +15,7 @@ namespace Piedra_Papel_Tijeras
         private BD repository = new BD();
         private Contadores matrizActual = new Contadores();
 
-        bool siderbarExpand; // Variable para controlar el estado del sidebar
+        bool siderbarExpand; 
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +38,7 @@ namespace Piedra_Papel_Tijeras
 
         private async void Form1_Load(object sender, EventArgs e)
         {
+            GestorMusica.ReproducirEnBucle(Properties.Resources.Inicio, "Menu");
             try
             {
                 matrizActual = await repository.ObtenerContadoresAsync(); 
@@ -53,8 +54,14 @@ namespace Piedra_Papel_Tijeras
         private void button1_Click(object sender, EventArgs e)
         {
             FormGame NuevoJuego = new FormGame();
-            NuevoJuego.Visible = true;
-            this.Visible = false;
+            NuevoJuego.FormClosed += (s, args) =>
+            {
+                this.Show();
+                GestorMusica.ReproducirEnBucle(Properties.Resources.Inicio, "Menu");
+            };
+
+            NuevoJuego.Show();
+            this.Hide();
         }
 
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
@@ -98,9 +105,5 @@ namespace Piedra_Papel_Tijeras
             this.Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
