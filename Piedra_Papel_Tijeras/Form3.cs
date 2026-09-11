@@ -131,5 +131,10 @@ namespace Piedra_Papel_Tijeras
             Form3_Load(sender, e);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            matrizActual.entrenando = !matrizActual.entrenando;
+
+        }
     }
 }

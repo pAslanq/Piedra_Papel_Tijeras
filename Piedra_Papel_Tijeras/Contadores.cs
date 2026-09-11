@@ -8,7 +8,7 @@ namespace Piedra_Papel_Tijeras
 {
     public class Contadores
     {
-
+        public bool entrenando = false;
         public int Total_Aprendizaje { get; set; } = 0;
 
         public int Piedra_Piedra { get; set; } = 0;
