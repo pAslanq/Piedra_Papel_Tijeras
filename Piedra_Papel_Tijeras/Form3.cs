@@ -86,13 +86,6 @@ namespace Piedra_Papel_Tijeras
 
             tabla.Rows.Add(jugadaAnterior, Col(p), Col(pa), Col(t), total);
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            this.Visible = false;
-            form1.Visible = true;
-        }
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
         {
             if (siderbarExpand)
@@ -124,7 +117,7 @@ namespace Piedra_Papel_Tijeras
         {
             Form1 form1 = new Form1();
             this.Close();
-            form1.Visible = true;
+            form1.Show();
 
         }
 

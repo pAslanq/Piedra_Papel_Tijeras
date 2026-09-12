@@ -287,13 +287,14 @@ namespace Piedra_Papel_Tijeras
 
         private async void FormGame_Load(object sender, EventArgs e)
         {
+            GestorMusica.ReproducirEnBucle(Properties.Resources.peleaaa, "Pelea");
             label2.Visible = FormGame.entrenando;
             pictureBox11.Visible = FormGame.entrenando;
             label2.Text = contEntrenamiento.ToString();
             try
             {
                 matrizActual = await repository.ObtenerContadoresAsync();
-    }
+            }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Error al cargar matriz: {ex.Message}");
