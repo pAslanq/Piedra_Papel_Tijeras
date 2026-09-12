@@ -11,7 +11,7 @@ namespace Piedra_Papel_Tijeras
 {
     public partial class Form3 : Form
     {
-        bool siderbarExpand; 
+        bool siderbarExpand;
         private BD bd;
         private Contadores matrizActual = new Contadores();
         private PrivateFontCollection coleccionFuentes;
@@ -37,8 +37,12 @@ namespace Piedra_Papel_Tijeras
                 HabilitarDobleBufer(hijo);
             }
         }
+        FormGame form = new FormGame();
         private async void Form3_Load(object sender, EventArgs e)
         {
+            if (FormGame.entrenando)     button3.Text = "DETENER ENTRENAMIENTO";
+            else button3.Text = "ENTRENAR";
+
             try
             {
                 GestorMusica.ReproducirEnBucle(Properties.Resources.Inicio, "Menu");
@@ -56,6 +60,7 @@ namespace Piedra_Papel_Tijeras
                       + contadores.Tijera_Piedra + contadores.Tijera_Papel + contadores.Tijera_Tijera;
 
             label3.Text = $"JUGADAS APRENDIDAS: {total}";
+            FormGame.contEntrenamiento=total;
         }
 
         private DataTable ConstruirMatrizAprendizaje(Contadores c)
@@ -80,13 +85,6 @@ namespace Piedra_Papel_Tijeras
             string Col(int valor) => total > 0 ? $"{valor} ({(valor * 100.0 / total):0.#}%)" : "0";
 
             tabla.Rows.Add(jugadaAnterior, Col(p), Col(pa), Col(t), total);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            this.Visible = false;
-            form1.Visible = true;
         }
         private void Sidebar_Timer_Tick(object sender, EventArgs e)
         {
@@ -119,7 +117,7 @@ namespace Piedra_Papel_Tijeras
         {
             Form1 form1 = new Form1();
             this.Close();
-            form1.Visible = true;
+            form1.Show();
 
         }
 
@@ -131,5 +129,24 @@ namespace Piedra_Papel_Tijeras
             Form3_Load(sender, e);
         }
 
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            FormGame.entrenando = !FormGame.entrenando;
+
+            if (FormGame.entrenando)
+            {
+                FormGame juego = new FormGame();
+                juego.Show();
+                this.Close();
+                button3.Text = "Detener Entrenamiento";
+            }
+            else
+            {
+                FormGame juego = new FormGame();
+                juego.Show();
+                button3.Text = "ENTRENAR";
+                this.Close();
+            }
+        }
     }
 }

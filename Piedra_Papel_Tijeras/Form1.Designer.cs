@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.MenuButton = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Sidebar_Timer = new System.Windows.Forms.Timer(this.components);
@@ -46,7 +45,6 @@
             // 
             this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.Sidebar.Controls.Add(this.MenuButton);
-            this.Sidebar.Controls.Add(this.button3);
             this.Sidebar.Controls.Add(this.button4);
             this.Sidebar.Controls.Add(this.button5);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Right;
@@ -75,23 +73,6 @@
             this.MenuButton.Tag = "CONFIGURACIÓN";
             this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click_1);
             // 
-            // button3
-            // 
-            this.button3.AutoSize = true;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_chicle__48;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 795);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(244, 100);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "ENTRENAR";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
             this.button4.AutoSize = true;
@@ -101,7 +82,7 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button4.Image = global::Piedra_Papel_Tijeras.Properties.Resources.knowledge_18514026__3_1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 702);
+            this.button4.Location = new System.Drawing.Point(3, 808);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(244, 87);
             this.button4.TabIndex = 4;
@@ -119,7 +100,7 @@
             this.button5.ForeColor = System.Drawing.Color.Transparent;
             this.button5.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_salida_50;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 596);
+            this.button5.Location = new System.Drawing.Point(3, 702);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 100);
             this.button5.TabIndex = 5;
@@ -196,7 +177,6 @@
         private System.Windows.Forms.FlowLayoutPanel Sidebar;
         private System.Windows.Forms.Timer Sidebar_Timer;
         private System.Windows.Forms.PictureBox MenuButton;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
     }

@@ -12,7 +12,7 @@ namespace Piedra_Papel_Tijeras
 
         public int Predecir(int ultima, Contadores matriz)
         {
-            if (ultima == 0) return ram.Next(1, 4);
+            if (ultima == 0 || matriz == null || matriz.Total_Aprendizaje <= 3) return ram.Next(1, 4);
             int recPiedra = 0, recPapel = 0, recTijera = 0;
 
             switch (ultima)

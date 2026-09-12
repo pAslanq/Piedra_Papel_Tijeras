@@ -53,14 +53,14 @@ namespace Piedra_Papel_Tijeras
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormGame NuevoJuego = new FormGame();
-            NuevoJuego.FormClosed += (s, args) =>
+            FormGame juego = new FormGame();
+            juego.FormClosed += (s, args) =>
             {
                 this.Show();
                 GestorMusica.ReproducirEnBucle(Properties.Resources.Inicio, "Menu");
             };
 
-            NuevoJuego.Show();
+            juego.Show();
             this.Hide();
         }
 
