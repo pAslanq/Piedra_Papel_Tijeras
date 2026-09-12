@@ -11,7 +11,7 @@ namespace Piedra_Papel_Tijeras
 {
     public partial class Form3 : Form
     {
-        bool siderbarExpand; 
+        bool siderbarExpand;
         private BD bd;
         private Contadores matrizActual = new Contadores();
         private PrivateFontCollection coleccionFuentes;
@@ -37,8 +37,12 @@ namespace Piedra_Papel_Tijeras
                 HabilitarDobleBufer(hijo);
             }
         }
+        FormGame form = new FormGame();
         private async void Form3_Load(object sender, EventArgs e)
         {
+            if (FormGame.entrenando)     button3.Text = "DETENER ENTRENAMIENTO";
+            else button3.Text = "ENTRENAR";
+
             try
             {
                 GestorMusica.ReproducirEnBucle(Properties.Resources.Inicio, "Menu");
@@ -131,10 +135,24 @@ namespace Piedra_Papel_Tijeras
             Form3_Load(sender, e);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
-            matrizActual.entrenando = !matrizActual.entrenando;
+            FormGame.entrenando = !FormGame.entrenando;
 
+            if (FormGame.entrenando)
+            {
+                FormGame juego = new FormGame();
+                juego.Show();
+                this.Close();
+                button3.Text = "Detener Entrenamiento";
+            }
+            else
+            {
+                FormGame juego = new FormGame();
+                juego.Show();
+                button3.Text = "ENTRENAR";
+                this.Close();
+            }
         }
     }
 }

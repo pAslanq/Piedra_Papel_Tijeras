@@ -17,7 +17,7 @@ namespace Piedra_Papel_Tijeras
     
     public partial class FormGame : Form
     {
-
+        public static bool entrenando = false;
         private const int LIMITE_APRENDIZAJE = 200;
         bool siderbarExpand; 
         private BD repository = new BD();
@@ -125,11 +125,18 @@ namespace Piedra_Papel_Tijeras
 
             if (ultimaJugadaUsuario != 0)
             {
-                ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
-                
-                await repository.ObtenerContadoresAsync(matrizActual);
+                if (FormGame.entrenando)
+                {
+                    ActualizarContadoresMatriz(ultimaJugadaUsuario, jugadaActualUsuario);
 
-                System.Diagnostics.Debug.WriteLine($"Nuevo total de jugadas: {matrizActual.Total_Aprendizaje}");
+                    await repository.ObtenerContadoresAsync(matrizActual);
+
+                    System.Diagnostics.Debug.WriteLine($"Nuevo total de jugadas: {matrizActual.Total_Aprendizaje}");
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine("[MODO NORMAL] No se guardan datos en la BD.");
+                }
             }
 
             ultimaJugadaUsuario = jugadaActualUsuario;
@@ -246,7 +253,7 @@ namespace Piedra_Papel_Tijeras
             }
         }
 
-        private async Task CargarDatosAsync()
+        public async Task CargarDatosAsync()
         {
             try
             {
@@ -264,23 +271,20 @@ namespace Piedra_Papel_Tijeras
         {
             Form3 aprendizaje = new Form3();
             aprendizaje.Show();
-            aprendizaje.FormClosed += (s, args) =>
-            {
-                this.Show();
-                GestorMusica.ReproducirEnBucle(Properties.Resources.peleaaa, "Pelea");
-            };
-            this.Hide();
+            aprendizaje.FormClosed += (s, args) => this.Close();
         }
 
         private async void FormGame_Load(object sender, EventArgs e)
         {
+            label2.Visible = FormGame.entrenando;
+
             try
             {
-                GestorMusica.ReproducirEnBucle(Properties.Resources.peleaaa, "Pelea");
-            }
+                matrizActual = await repository.ObtenerContadoresAsync();
+    }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"[ERROR] No se pudo reproducir el sonido: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Error al cargar matriz: {ex.Message}");
             }
         }
     }
