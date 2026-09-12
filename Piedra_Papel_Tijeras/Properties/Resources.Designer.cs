@@ -183,6 +183,16 @@ namespace Piedra_Papel_Tijeras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EntrenandoIA {
+            get {
+                object obj = ResourceManager.GetObject("EntrenandoIA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EtiquetaBot {
             get {
                 object obj = ResourceManager.GetObject("EtiquetaBot", resourceCulture);

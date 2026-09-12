@@ -18,6 +18,7 @@ namespace Piedra_Papel_Tijeras
     public partial class FormGame : Form
     {
         public static bool entrenando = false;
+        public static int contEntrenamiento;
         private const int LIMITE_APRENDIZAJE = 200;
         bool siderbarExpand; 
         private BD repository = new BD();
@@ -98,11 +99,21 @@ namespace Piedra_Papel_Tijeras
                 pictureBox5.Image = Properties.Resources.ChangoHappy;
                 pictureBox9.Image = Properties.Resources.BotNojao;
                 ReproducirSonido(Properties.Resources.win_monkey);
+                if (FormGame.entrenando&&contEntrenamiento<200)
+                {
+                    contEntrenamiento++;
+                    label2.Text = contEntrenamiento.ToString();
+                }
             } else if(ganador == "¡Gana el Bot!")
             {
                 pictureBox5.Image = Properties.Resources.ChangoSad;
                 pictureBox9.Image = Properties.Resources.BotHappy;
                 ReproducirSonido(Properties.Resources.mad_monkey);
+                if (FormGame.entrenando && contEntrenamiento < 200)
+                {
+                    contEntrenamiento++;
+                    label2.Text = contEntrenamiento.ToString();
+                }
             } else
             {
                 pictureBox5.Image = Properties.Resources.ChangoAngry;
@@ -277,7 +288,8 @@ namespace Piedra_Papel_Tijeras
         private async void FormGame_Load(object sender, EventArgs e)
         {
             label2.Visible = FormGame.entrenando;
-
+            pictureBox11.Visible = FormGame.entrenando;
+            label2.Text = contEntrenamiento.ToString();
             try
             {
                 matrizActual = await repository.ObtenerContadoresAsync();

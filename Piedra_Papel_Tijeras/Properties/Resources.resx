@@ -133,6 +133,9 @@
   <data name="restart-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restart-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mad_monkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mad_monkey.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -145,17 +148,14 @@
   <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Piedra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Piedra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tijera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tijera1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChangoSad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChangoSad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BotRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_dmf1o2dmf1o2dmf1-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_dmf1o2dmf1o2dmf1-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManoPiedraRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ManoPiedraRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_xy9p5hxy9p5hxy9p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_xy9p5hxy9p5hxy9p.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,15 +172,6 @@
   <data name="YouLouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YouLouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-chicle--48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-chicle--48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondoTablav2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoTablav2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChangoHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChangoHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="EtiquetaMono" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EtiquetaMono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,8 +184,11 @@
   <data name="Opciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BotRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BotRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="YouWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YouWin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-chicle--48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-chicle--48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tite.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -208,29 +202,41 @@
   <data name="fondo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="YouWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\YouWin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Piedra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Piedra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ManoPapel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoPapel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="knowledge_18514026 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\knowledge_18514026 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BotThink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotThink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-salida-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-salida-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ManoPapelRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ManoPapelRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BotDamage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotDamage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gemini_Generated_Image_rs76pkrs76pkrs76" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="restart-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart-icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-salida-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-salida-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BotNojao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotNojao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManoPapelRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ManoPapelRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tijera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tijera1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gemini_Generated_Image_rs76pkrs76pkrs76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoTablav2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoTablav2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BotHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,20 +244,23 @@
   <data name="37a4cd36cf0cd53d465cb5fbba873919" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\37a4cd36cf0cd53d465cb5fbba873919.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inicio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="peleaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peleaaa.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fondo peleas.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoPeleas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Imagen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChangoHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangoHappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ManoTijera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoTijera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChangoAngry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChangoAngry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NoWinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NoWinner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,8 +268,8 @@
   <data name="b1323cbb-6436-4c78-b16b-21fb4ddf2b9c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\b1323cbb-6436-4c78-b16b-21fb4ddf2b9c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="knowledge_18514026 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\knowledge_18514026 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChangoSad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangoSad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gemini_Generated_Image_giudsgiudsgiudsg-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gemini_Generated_Image_giudsgiudsgiudsg-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,16 +277,10 @@
   <data name="ManoTijeraRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManoTijeraRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ManoPiedraRotada" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ManoPiedraRotada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChangoAngry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangoAngry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restart-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restart-icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="peleaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\peleaaa.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Inicio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="EntrenandoIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EntrenandoIA4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

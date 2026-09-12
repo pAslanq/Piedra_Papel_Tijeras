@@ -60,6 +60,7 @@ namespace Piedra_Papel_Tijeras
                       + contadores.Tijera_Piedra + contadores.Tijera_Papel + contadores.Tijera_Tijera;
 
             label3.Text = $"JUGADAS APRENDIDAS: {total}";
+            FormGame.contEntrenamiento=total;
         }
 
         private DataTable ConstruirMatrizAprendizaje(Contadores c)

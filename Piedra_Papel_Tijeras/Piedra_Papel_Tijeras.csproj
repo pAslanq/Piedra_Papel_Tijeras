@@ -234,6 +234,10 @@
     <None Include="Resources\Chango.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Opciones4.png" />
+    <None Include="Resources\Opciones3.png" />
+    <None Include="Resources\Opciones2.png" />
+    <None Include="Resources\Opciones1.png" />
     <None Include="Resources\restart-icon1.jpg" />
     <None Include="Resources\restart-icon.jpg" />
     <None Include="Resources\Opciones.png" />
@@ -249,6 +253,9 @@
     <None Include="Resources\EtiquetaBot1.png" />
     <None Include="Resources\BotNojao.png" />
     <None Include="Resources\BotThink.png" />
+    <None Include="Resources\AprendizajeIcon1.png" />
+    <None Include="Resources\ExitIcon1.png" />
+    <None Include="Resources\EntrenandoIA4.png" />
     <Content Include="Resources\fondoPeleas.jpg" />
     <None Include="Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg" />
     <None Include="Resources\fondo2.jpeg" />
