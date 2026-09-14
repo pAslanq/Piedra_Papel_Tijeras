@@ -55,8 +55,8 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Sidebar_Timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -170,7 +170,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(138, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 15);
+            this.label5.Size = new System.Drawing.Size(110, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "AJUSTES";
             // 
@@ -193,7 +193,7 @@
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(241, 87);
+            this.button4.Size = new System.Drawing.Size(251, 87);
             this.button4.TabIndex = 1;
             this.button4.Text = "MOSTRAR APRENDIZAJE";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -364,9 +364,9 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(172, 234);
+            this.label3.Location = new System.Drawing.Point(150, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 98);
+            this.label3.Size = new System.Drawing.Size(135, 148);
             this.label3.TabIndex = 9;
             this.label3.Text = "0";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -389,9 +389,9 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(948, 234);
+            this.label4.Location = new System.Drawing.Point(926, 209);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 98);
+            this.label4.Size = new System.Drawing.Size(135, 148);
             this.label4.TabIndex = 10;
             this.label4.Text = "0";
             // 
@@ -410,7 +410,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(439, 757);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 7;
             // 
             // tableLayoutPanel2
@@ -429,18 +429,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(384, 183);
             this.tableLayoutPanel2.TabIndex = 18;
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(316, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 91);
-            this.label2.TabIndex = 11;
-            // 
             // pictureBox11
             // 
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -451,6 +439,18 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(316, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 91);
+            this.label2.TabIndex = 11;
             // 
             // Sidebar_Timer
             // 
