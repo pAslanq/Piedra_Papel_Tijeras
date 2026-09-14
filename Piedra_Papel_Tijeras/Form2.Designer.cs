@@ -150,7 +150,6 @@
             // MenuButton
             // 
             this.MenuButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuButton.BackgroundImage = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_ajustes_48;
             this.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuButton.Dock = System.Windows.Forms.DockStyle.Left;

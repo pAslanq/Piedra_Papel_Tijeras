@@ -105,21 +105,16 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Include="Properties\Resources1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
@@ -127,6 +122,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="upheavtt.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -141,9 +139,6 @@
     <None Include="Resources\TituloPiedraPapelTijeras.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\b1323cbb-6436-4c78-b16b-21fb4ddf2b9c.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8-salida-50.png" />
   </ItemGroup>
   <ItemGroup>
@@ -154,9 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-ajustes-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Atrass.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Piedra.png" />
@@ -186,9 +178,6 @@
     <None Include="Resources\Gemini_Generated_Image_hd0a5shd0a5shd0a.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\37a4cd36cf0cd53d465cb5fbba873919.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Gemini_Generated_Image_9g1mo99g1mo99g1m-Photoroom.png" />
   </ItemGroup>
   <ItemGroup>
@@ -210,13 +199,7 @@
     <None Include="Resources\ManoPapel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BotRed.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\BotHappy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BotDamage.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bot.png" />
@@ -234,6 +217,11 @@
     <None Include="Resources\Chango.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_4svode4svode4svo-Photoroom2.png" />
+    <None Include="Resources\Gemini_Generated_Image_4svode4svode4svo-Photoroom1.png" />
+    <None Include="Resources\LogoPPT.png" />
+    <None Include="Resources\Gemini_Generated_Image_4svode4svode4svo-Photoroom.png" />
+    <None Include="Resources\TrainingIcon1.png" />
     <None Include="Resources\Opciones4.png" />
     <None Include="Resources\Opciones3.png" />
     <None Include="Resources\Opciones2.png" />
@@ -253,9 +241,9 @@
     <None Include="Resources\EtiquetaBot1.png" />
     <None Include="Resources\BotNojao.png" />
     <None Include="Resources\BotThink.png" />
-    <None Include="Resources\AprendizajeIcon1.png" />
     <None Include="Resources\ExitIcon1.png" />
     <None Include="Resources\EntrenandoIA4.png" />
+    <None Include="Resources\ExitIcon2.png" />
     <Content Include="Resources\fondoPeleas.jpg" />
     <None Include="Resources\Gemini_Generated_Image_rs76pkrs76pkrs76.jpg" />
     <None Include="Resources\fondo2.jpeg" />

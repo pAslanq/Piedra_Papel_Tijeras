@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.MenuButton = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -49,24 +50,25 @@
             this.Sidebar.Controls.Add(this.button5);
             this.Sidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.Sidebar.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.Sidebar.Location = new System.Drawing.Point(1390, 0);
-            this.Sidebar.MaximumSize = new System.Drawing.Size(247, 0);
-            this.Sidebar.MinimumSize = new System.Drawing.Size(70, 0);
+            this.Sidebar.Location = new System.Drawing.Point(2081, 0);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Sidebar.MaximumSize = new System.Drawing.Size(370, 0);
+            this.Sidebar.MinimumSize = new System.Drawing.Size(105, 0);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(70, 980);
+            this.Sidebar.Size = new System.Drawing.Size(105, 1466);
             this.Sidebar.TabIndex = 3;
             // 
             // MenuButton
             // 
             this.MenuButton.BackColor = System.Drawing.Color.Transparent;
-            this.MenuButton.BackgroundImage = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_ajustes_48;
             this.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MenuButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuButton.Image = global::Piedra_Papel_Tijeras.Properties.Resources.Opciones;
-            this.MenuButton.Location = new System.Drawing.Point(3, 901);
+            this.MenuButton.Location = new System.Drawing.Point(4, 1344);
+            this.MenuButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuButton.Name = "MenuButton";
-            this.MenuButton.Size = new System.Drawing.Size(70, 76);
+            this.MenuButton.Size = new System.Drawing.Size(105, 117);
             this.MenuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MenuButton.TabIndex = 2;
             this.MenuButton.TabStop = false;
@@ -82,9 +84,10 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button4.Image = global::Piedra_Papel_Tijeras.Properties.Resources.knowledge_18514026__3_1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 808);
+            this.button4.Location = new System.Drawing.Point(4, 1200);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(244, 87);
+            this.button4.Size = new System.Drawing.Size(376, 134);
             this.button4.TabIndex = 4;
             this.button4.Text = "MOSTRAR APRENDIZAJE";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -100,9 +103,10 @@
             this.button5.ForeColor = System.Drawing.Color.Transparent;
             this.button5.Image = global::Piedra_Papel_Tijeras.Properties.Resources.icons8_salida_50;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 702);
+            this.button5.Location = new System.Drawing.Point(4, 1036);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 100);
+            this.button5.Size = new System.Drawing.Size(366, 154);
             this.button5.TabIndex = 5;
             this.button5.Text = "Salir";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -118,11 +122,12 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Piedra_Papel_Tijeras.Properties.Resources.TituloPiedraPapelTijeras;
-            this.pictureBox1.Location = new System.Drawing.Point(424, 36);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(591, 42);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(667, 381);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(1000, 688);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -135,28 +140,28 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(645, 495);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.MaximumSize = new System.Drawing.Size(200, 200);
-            this.button1.MinimumSize = new System.Drawing.Size(200, 200);
+            this.button1.Location = new System.Drawing.Point(968, 762);
+            this.button1.MaximumSize = new System.Drawing.Size(300, 308);
+            this.button1.MinimumSize = new System.Drawing.Size(300, 308);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 200);
+            this.button1.Size = new System.Drawing.Size(300, 308);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Piedra_Papel_Tijeras.Properties.Resources.fondo2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1460, 980);
+            this.ClientSize = new System.Drawing.Size(2186, 1466);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menú Principal";
